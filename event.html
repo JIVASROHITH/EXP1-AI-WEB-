@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Event Registration Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #0b5ed7;
+            color: white;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        video, audio {
+            width: 100%;
+            margin-top: 15px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px 0;
+        }
+        input[type="radio"] {
+            width: auto;
+        }
+        input[type="submit"] {
+            background-color: #0b5ed7;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #084298;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Tech Innovators Conference 2025</h1>
+    <p>Register now to explore future technologies!</p>
+</header>
+
+<section>
+    <!-- Image Banner -->
+    <h2>Event Banner</h2>
+    <img src="banner.jpg" alt="Event Banner">
+
+    <!-- Promotional Video -->
+    <h2>Promotional Video</h2>
+    <video controls>
+        <source src="promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Background Audio -->
+    <h2>Intro Audio</h2>
+    <audio controls>
+        <source src="intro.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Registration Form -->
+    <h2>Event Registration Form</h2>
+    <form>
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        <label>Event Track:</label>
+        <select required>
+            <option value="">-- Select Track --</option>
+            <option>AI & Machine Learning</option>
+            <option>Cyber Security</option>
+            <option>Web Development</option>
+            <option>Cloud Computing</option>
+        </select>
+
+        <label>Why do you want to attend?</label>
+        <textarea rows="4" placeholder="Write your reason here..."></textarea>
+
+        <label>Upload ID Proof:</label>
+        <input type="file" accept=".jpg,.png,.pdf">
+
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+</body>
+</html>
